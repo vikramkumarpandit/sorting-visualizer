@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🧠 Sorting Algorithm Visualizer</h1>
+  </header>
+
+<div class="controls">
+  <select id="algorithm">
+    <option value="bubble">Bubble Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="insertion">Insertion Sort</option>
+    <option value="merge">Merge Sort</option>
+    <option value="quick">Quick Sort</option>
+    <option value="heap">Heap Sort</option>
+  </select>
+
+  <label>Speed:
+    <input type="range" id="speed" min="10" max="1000" value="250" />
+  </label>
+
+  <label>Array Size:
+    <input type="range" id="size" min="10" max="150" value="50" />
+  </label>
+
+  <label>
+    ⚡ Fast Mode <input type="checkbox" id="fast-mode" />
+  </label>
+
+  <button onclick="generateArray()">🔄 New Array</button>
+  <button onclick="startSort()">🚀 Start</button>
+  <button onclick="stopSort()">⏹️ Stop</button>
+</div>
+
+
+
+  <div id="bars-container"></div>
+
+  <footer>
+   <p>© 2025 Designed and Developed by <strong>Vikram Kumar</strong></p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
